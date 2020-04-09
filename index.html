@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- Javascript -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Password Generator</h1>
+                        <h3 class="passwordDisplay" id="passwordDisplay">password</h3>
+                        <form id="passwordGeneratorForm" class="form">
+                            <label for="characterAmountNumber">Number Of Characters</label>
+                            <div class="characterAmountContainer">
+                                <input type="range" id="characterAmountRange" min="1" max="128" value="10">
+                                <input type="number" id="characterAmountNumber" min="1" max="128" value="10">
+                            </div>
+                            
+                            <label for="includeUppercase">Include Uppercase</label>
+                            <input type="checkbox" id="includeUppercase">
+
+                            <label for="includeNumbers">Include Numbers</label>
+                            <input type="checkbox" id="includeNumbers">
+
+                            <label for="includeSymbols">Include Symbols</label>
+                            <input type="checkbox" id="includeSymbols">
+
+                            <button type="submit" class="btn btn-primary btn-lg">Generate Password</button>    
+                        </form>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <footer id="sticky-footer" class="py-4">
+        <div class="container text-center">
+          <small>Copyright &copy; Kobe Matias 2020</small>
+        </div>
+    </footer>
+</body>
+</html>
